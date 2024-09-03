@@ -1,6 +1,6 @@
 import "./App.css";
 
-import Profile from "./components/Profile/profile";
+import Profile from "./components/Profile/Profile";
 
 import FriendList from "./components/FriendList/FriendList";
 
