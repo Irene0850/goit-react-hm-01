@@ -1,15 +1,6 @@
 import css from "./Profile.module.css";
 
-const Profile = ({
-  name,
-  tag,
-  location,
-  image,
-  stats,
-  followers,
-  views,
-  likes,
-}) => {
+const Profile = ({ name, tag, location, image, stats }) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -22,15 +13,15 @@ const Profile = ({
       <ul className={css.stats}>
         <li className={css.statsItem}>
           <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{followers}</span>
+          <span className={css.quantity}>{stats.followers}</span>
         </li>
         <li className={css.statsItem}>
           <span className={css.label}>Views</span>
-          <span className={css.quantity}>{views}</span>
+          <span className={css.quantity}>{stats.views}</span>
         </li>
         <li className={css.statsItem}>
           <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{likes}</span>
+          <span className={css.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
